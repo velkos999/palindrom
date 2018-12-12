@@ -6,7 +6,6 @@ class Palindrom {
 	private $str;
 	private $length;
 	private $palindroms = [];
-	private $str_palindrom; //Вхоядщая строка = палиндром
 
 	function __construct($str)
 	{
@@ -73,7 +72,7 @@ class Palindrom {
 		if($this->is_given_str_palindrom())
 			echo "given string is palindrom".PHP_EOL;
 		elseif($this->get_the_longest_sub_palindrom())
-			echo "the logest palindrom is = ".$this->get_the_longest_sub_palindrom().PHP_EOL;
+			echo "the longest palindrom is = ".$this->get_the_longest_sub_palindrom().PHP_EOL;
 		else
 			echo "first letter of the given string = ".$this->str[0].PHP_EOL;
 	}
